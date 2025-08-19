@@ -341,7 +341,7 @@ class TunnelingAlgorithm:
 				self.level[x][y] = 0
 
 	def createHorTunnel(self, x1, x2, y):
-		for x in range(min(x1,x2),max(x1,x2)+1):
+		for x in range(int(min(x1,x2)),int(max(x1,x2)+1)):
 			self.level[x][y] = 0
 
 	def createVirTunnel(self, y1, y2, x):
